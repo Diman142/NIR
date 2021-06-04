@@ -605,7 +605,11 @@ export const Form = () => {
       })
 
       if(ok){
-        firstInValidEl = validCheck()
+        const valCheck  = validCheck()
+
+        if(valCheck){
+          firstInValidEl = valCheck
+        }
 
         if(manageCheck){
           MangeTextInputsConfigs.forEach(input => {
@@ -635,7 +639,7 @@ export const Form = () => {
         }
 
         checboxInputsConfigs.forEach(check => {
-          if(!manageActivityesArr.length){
+          if(!check.valueArr.length){
             if(check.ref.current){
               check.ref.current.classList.add('inValidNum')
               check.ref.current.previousElementSibling.classList.add('red')

@@ -1,6 +1,5 @@
 export function validation(type, value, changeValid) {
   if (type === 'email') {
-    console.log(value)
     const reg =
       /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/gi;
     let flag = reg.test(value)
