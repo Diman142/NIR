@@ -1,0 +1,76 @@
+.Input {
+  margin-bottom: 15px;
+}
+
+
+.Input label {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 30px;
+  line-height: 2;
+}
+
+.Input input {
+  width: 500px;
+  height: 46px;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #bebebe;
+  padding: 7px;
+  margin: 0 0 5px;
+  outline: none;
+  transition: all .3s ease-in-out;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.Input span {
+  color: #f01f30;
+  font-size: 16px;
+}
+
+.InputRadio {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.InputRadio label{
+  position: relative;
+  padding-left: 27px;
+
+}
+
+.InputRadio label::before{
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+
+.Checked {
+  background-color: #f01f30
+}
+
+
+
+
+
+.Input.invalid {
+  color: #f01f30;
+}
+
+.InputInValid {
+  border: 1px solid #f01f30 !important;
+}
